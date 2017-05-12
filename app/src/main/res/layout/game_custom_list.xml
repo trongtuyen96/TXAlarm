@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="55dp"
+        android:id="@+id/GameName"
+        android:layout_weight="3"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/TryGame"
+        android:layout_width="54dp"
+        android:layout_height="34dp"
+        android:text="Try"
+        android:background="@drawable/game_bg"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:focusable="false"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="75dp"-->
+        <!--android:id="@+id/GameCheck"-->
+        <!--android:paddingLeft="4dp"-->
+        <!--/>-->
+
+</LinearLayout>

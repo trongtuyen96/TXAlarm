@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="104dp"
+        android:layout_height="76dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageIcon" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="155dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:id="@+id/cityName"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_height="match_parent"
+            android:id="@+id/textCountry"
+            android:gravity="top|center_vertical"
+            android:textColorLink="@color/pressed_color"
+            android:textColor="@color/pressed_color"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGMT"
+            android:gravity="bottom|left|center_horizontal" />
+
+        <TextView
+            android:text="TextVie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityHour"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:textColor="@color/pressed_color" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewDay"
+            android:gravity="top|left" />
+    </LinearLayout>
+
+
+</LinearLayout>

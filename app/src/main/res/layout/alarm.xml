@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:layout_height="73dp"
+        android:id="@+id/textView"
+        android:textColor="@color/pressed_color"
+        android:textAllCaps="true"
+        android:textSize="44sp"
+        android:background="@color/colorWhite"
+        android:text="TEXTVIEW"
+        android:layout_width="wrap_content"
+        android:textIsSelectable="false"
+        android:textAlignment="center"
+        android:layout_weight="0.50"
+        android:gravity="center_vertical" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_pencil"
+        android:id="@+id/EditButton"
+        android:background="@color/colorWhite"
+        android:layout_weight="0.3"
+        android:layout_gravity="center_vertical" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch2"
+        tools:background="@color/colorWhite"
+        android:gravity="right|center_vertical"
+        android:layout_gravity="right|center_vertical"
+        android:layout_weight="0.2" />
+
+</LinearLayout>

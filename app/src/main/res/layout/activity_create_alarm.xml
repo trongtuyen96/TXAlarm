@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ActivityName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CREATE ALARM"
+        android:textAppearance="@android:style/TextAppearance.WindowTitle"
+        android:gravity="center"
+        android:background="@color/pressed_color"/>
+
+    <Button
+        android:text="DELETE THIS ALARM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDel"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginLeft="100dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ListView
+        android:id="@+id/OptionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/Volumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volumn: "
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+        android:paddingLeft="10dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:background="@color/colorWhite" />
+
+
+    <CheckBox android:id="@+id/DefaultCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default volume"
+        android:textColorLink="@color/pressed_color" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="0.5"
+            android:text="Cancel"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="0.5"
+            android:text="OK"
+            android:textColor="@color/colorWhite"
+            android:background="@color/pressed_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

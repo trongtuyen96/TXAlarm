@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6">
+
+        <ProgressBar
+            android:id="@+id/shake_vertical_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="50"
+            android:progress="0"
+            android:layout_weight="0.6"
+            android:progressDrawable="@drawable/progress_drawable_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.2"
+            android:id="@+id/textViewShake"
+            android:text="Shake Your Phone"
+            android:textColor="@color/pressed_color"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/shake_delay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.2"
+        android:text="Delay"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@color/colorWhite">
+    </Button>
+
+    <Button
+        android:id="@+id/shake_quit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.2"
+        android:text="Quit"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@color/colorWhite">
+    </Button>
+
+</LinearLayout>

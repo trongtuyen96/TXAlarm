@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Clock"
+        android:textSize="80sp"
+        android:gravity="center"
+        android:layout_marginTop="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/none_game_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="0.5"
+            android:text="Quit"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Button
+            android:id="@+id/none_game_delay"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="0.5"
+            android:text="Delay"
+            android:background="@color/pressed_color"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

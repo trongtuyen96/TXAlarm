@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ActivityGameName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="NUMBER ORDER"
+        android:textAppearance="@android:style/TextAppearance.WindowTitle"
+        android:gravity="center"
+        android:background="@color/pressed_color"/>
+
+    <TextView
+        android:id="@+id/Instruct"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Press number in ascending order"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+       />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="41dp"
+        android:background="@drawable/game_bg">
+
+        <Button
+            android:background="@drawable/button_bg"
+            android:id="@+id/NUM_01"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+        <Button
+            android:background="@drawable/button_bg"
+            android:id="@+id/NUM_02"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+        <Button
+            android:background="@drawable/button_bg"
+            android:id="@+id/NUM_03"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text=""
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+        <Button
+            android:background="@drawable/button_bg"
+            android:id="@+id/NUM_04"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text=""
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/GameDone"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Submit Answer"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/GameRestart"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Reset Game"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/GameReplay"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Play Again"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/GameQuit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Quit Game"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>
